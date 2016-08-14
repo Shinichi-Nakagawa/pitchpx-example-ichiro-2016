@@ -1,6 +1,8 @@
 ---
 config:
   output: ./output/mlbam
+dataset:
+  output: ./output/datasets
 bq:
   project: baseball
   dataset: mlbam

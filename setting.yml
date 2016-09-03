@@ -1,6 +1,6 @@
 ---
 config:
-  output: ./output/mlbam
+  output: ./output
 dataset:
   output: ./output/datasets
 bq:

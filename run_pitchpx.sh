@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 
 function run_pitchpx () {
-    echo "pitchpx -s $1$201 -e $1$231 -o ./output/$1"
-    # pitchpx -s "$1$201" -e "$1$231" -o "./output/$1"
+    pitchpx -s "$10322" -e "$10331" -o "./output/$1"
+    pitchpx -s "$10401" -e "$10430" -o "./output/$1"
+    pitchpx -s "$10501" -e "$10531" -o "./output/$1"
+    pitchpx -s "$10601" -e "$10630" -o "./output/$1"
+    pitchpx -s "$10701" -e "$10731" -o "./output/$1"
+    pitchpx -s "$10801" -e "$10831" -o "./output/$1"
+    pitchpx -s "$10901" -e "$10930" -o "./output/$1"
+    pitchpx -s "$11001" -e "$11031" -o "./output/$1"
 }
 
-for (( y=2015; $y < 2017 ; ++y )); do
-    mkdir "./output/$y"
-    for (( month=3; $month < 12 ; ++month )); do
-        m=$(printf %02d $month);
-        run_pitchpx $y $m
-    done
+for (( y=2013; $y < 2015 ; ++y )); do
+    mkdir -p "./output/$y"
+    run_pitchpx $y
 done
